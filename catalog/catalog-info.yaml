@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloudfusion-tap
+  annotations:
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=cloudfusion-tap"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
+  providesApis:
+    - cloudfusion-tap
