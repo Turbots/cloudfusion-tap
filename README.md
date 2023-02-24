@@ -1,5 +1,6 @@
-# Introduction cloudfusion-tap
-cloudfusion-tap provides you an out-of-the-box application setup to implement your business logic. It is based on the
+# Proximus Cloudfusion Platform - Demo Application
+
+This is a demo of an out-of-the-box application setup to implement your business logic. It is based on the
 commonly known 3-layered application architecture in where the package `api` provides the presentation layer, `domain` provides 
 the services and business domain and finally the `data` package provides you the capability to persist your domain.
 
@@ -53,7 +54,7 @@ Launch application using profile `local`:
 You can access the API docs using `curl`:
 
 ```bash
-curl http://localhost:8080/api-docs  
+curl http://localhost:8080/v3/api-docs
 ```
 
 ### Create customer profile
