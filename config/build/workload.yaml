@@ -33,6 +33,6 @@ spec:
         description: CloudFusion REST API built using Spring Boot powered by Tanzu Application Platform Accelerators
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/Turbots/cloudfusion-tap.git
       ref:
         branch: main
