@@ -14,7 +14,7 @@ spec:
       ref:
         apiVersion: sql.tanzu.vmware.com/v1
         kind: Postgres
-        name: customer-profile-database
+        name: cloudfusion-tap-database
   build:
     env:
       - name: BP_JVM_VERSION
@@ -27,7 +27,7 @@ spec:
       value:
         type: openapi
         location: 
-          path: "/api-docs"
+          path: "/v3/api-docs"
         owner: team-tanzu
         system: cloudfusion
         description: CloudFusion REST API built using Spring Boot powered by Tanzu Application Platform Accelerators

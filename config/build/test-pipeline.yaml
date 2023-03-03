@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
-  name: cloudfusion-tap-test-pipeline
+  name: test-with-maven
   labels:
     apps.tanzu.vmware.com/pipeline: test-with-maven
 spec:

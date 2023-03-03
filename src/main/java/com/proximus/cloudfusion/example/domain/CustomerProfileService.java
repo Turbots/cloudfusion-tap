@@ -2,9 +2,11 @@ package com.proximus.cloudfusion.example.domain;
 
 import com.proximus.cloudfusion.example.data.CustomerProfileEntity;
 import com.proximus.cloudfusion.example.data.CustomerProfileRepository;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -50,5 +52,15 @@ public class CustomerProfileService {
                 entity.getFirstName(),
                 entity.getLastName(),
                 entity.getEmail());
+    }
+
+    public List<CustomerProfileResponse> list() {
+        return repository.findAll(PageRequest.of(0, 20))
+                .get().map(entity -> new CustomerProfileResponse(
+                        entity.getId().toString(),
+                        entity.getFirstName(),
+                        entity.getLastName(),
+                        entity.getEmail()))
+                .toList();
     }
 }
