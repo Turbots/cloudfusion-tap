@@ -8,5 +8,6 @@ spec:
   type: service
   lifecycle: production
   owner: belgian-team
+  system: cloudfusion
   providesApis:
     - cloudfusion-tap

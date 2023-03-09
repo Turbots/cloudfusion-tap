@@ -25,10 +25,12 @@ spec:
         autoscaling.knative.dev/minScale: "1"
     - name: api_descriptor
       value:
+        name: cloudfusion-tap
         type: openapi
         location: 
           path: "/v3/api-docs"
-        owner: team-tanzu
+        owner: belgian-team
+        lifecycle: production
         system: cloudfusion
         description: CloudFusion REST API built using Spring Boot powered by Tanzu Application Platform Accelerators
   source:
