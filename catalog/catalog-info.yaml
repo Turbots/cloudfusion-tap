@@ -6,7 +6,7 @@ metadata:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=cloudfusion-tap"
 spec:
   type: service
-  lifecycle: experimental
-  owner: default-team
+  lifecycle: production
+  owner: belgian-team
   providesApis:
     - cloudfusion-tap
