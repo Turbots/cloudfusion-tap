@@ -1,9 +1,9 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
-  name: test-with-maven
+  name: test
   labels:
-    apps.tanzu.vmware.com/pipeline: test-with-maven
+    apps.tanzu.vmware.com/pipeline: test
 spec:
   params:
     - name: source-url
